@@ -92,9 +92,9 @@ public class ProgUsuario {
             
             System.out.println ("Algo ha fallado... Por favor introduzca un usuario y telefono nuevo");
             
-            //Borra el ultimo nombre y apellido de la ultima posicion (")
-            lista_nombres[last_pos] = ("");
-            lista_telefonos[last_pos] = ("");
+            //Dejamos en blanco el espacio
+            lista_nombres[last_pos] = (null);
+            lista_telefonos[last_pos] = (null);
             
             //Devolvemos last_pos sin modificar
             return last_pos;
@@ -106,7 +106,7 @@ public class ProgUsuario {
         System.out.println("Pulse cualquier tecla para continuar");
         scan.nextLine();
 
-        // Se devuelve el índice sin modificar
+        // Se devuelve last_pos sin modificar
         return last_pos;
        
         }
